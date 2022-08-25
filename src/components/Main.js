@@ -57,7 +57,7 @@ function Main() {
             })
                 .then((response) => {
                     if( response.ok ) {
-                        alert('Saved!');
+                        // alert('Saved!');
                         getNewCard();
                 
                     }
@@ -78,7 +78,7 @@ function Main() {
             })
                 .then((response) => {
                     if( response.ok ) {
-                        alert('Saved!');
+                        // alert('Saved!');
                         getNewCard();
                     }
                 })
@@ -110,7 +110,7 @@ function Main() {
             })
             .then((data) => {
                 console.log(data);
-                alert('Cat Card deleted!');
+                // alert('Cat Card deleted!');
                 
             })
             .catch((err) => {
@@ -124,13 +124,15 @@ function Main() {
             <div className="main--container">
                 <h3 className="main--catFact">{catCardData.catFact}</h3>
                 <img src={catCardData.imgUrl} className="main--catPic" alt="random cat"/>
-            </div>
-            <input type='text' name='catCaption' value={catCardData.caption} placeholder="Caption me!" className="main--caption"
+                <input type='text' name='catCaption' value={catCardData.caption} placeholder="Caption me!" className="main--caption"
                 onChange={handleCaption}/>
-            <div>
-                <button onClick={handleSave}>💾 Save to Collection</button>
-                <button onClick={getNewCard}>Get Next Card ⇒</button>
             </div>
+            
+            <div className="main--button--container">
+                <button className="main--button" onClick={handleSave}>💾 Save to Collection</button>
+                <button className="main--button" onClick={getNewCard}>Get Next Card ⇒</button>
+            </div>
+            <hr className="main--rule" ></hr>
             <Collection catCards={catCards} handleDelete={handleDelete} handleEdit={handleEdit}/>
         </main>
 

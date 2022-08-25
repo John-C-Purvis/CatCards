@@ -1,38 +1,103 @@
 .App {
   text-align: center;
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {
+  background-color: #ebd5a5;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: calc(5px + 2vmin);
+  color: #705a41;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0px 4px 5px 2px rgb(109, 109, 109);
 }
 
-.App-link {
-  color: #61dafb;
+.main--container {
+  border: solid 1px #947a52;
+  background-color: #d8c6a1;
+  box-shadow: 0px 4px 5px 2px rgb(109, 109, 109);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.main--catFact {
+  color: #3f2109;
+  margin: 5px;
+}
+
+.main--catPic {
+  max-width: 580px;
+  box-shadow: 0px 2px 5px 2px #000000;
+}
+
+.main--caption {
+  width: 500px;
+  text-align: center;
+  margin: 10px;
+  font-size: 20px;
+}
+
+.main--button--container {
+  margin: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.main--button {
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.main--rule {
+  
+}
+
+.cat--card {
+  border: solid 1px #947a52;
+  background-color: #d8c6a1;
+  box-shadow: 0px 4px 5px 2px rgb(109, 109, 109);
+  margin-bottom: 50px;
+}
+
+.card--image {
+  max-width: 500px;
+  box-shadow: 0px 2px 5px 2px #000000;
+  margin-top: 10px;
+}
+
+.card--caption {
+  color: #381204;
+  font-size: 20px;
+}
+
+.card--icons {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 20px;
+}
+
+.card--span {
+  cursor: pointer;
+  font-size: 30px;
+}
+
+.collection {
+  
+}
+
+.collection--title {
+  font-size: 30px;
+  background-color: #ebd5a5;
+  color: #705a41;
+  box-shadow: 0px 4px 5px 2px #6d6d6d;
+}
+
+.collection--cards {
+  
 }
